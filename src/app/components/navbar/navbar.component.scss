@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+    }
+
+    .currency {
+      display: flex;
+      align-items: center;
+
+      .currency-item {
+        margin-right: 10px;
+      }
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+
+      input[type="text"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+      }
+
+      button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .currency {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .currency-item {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      border: 1px solid #7e57c2; /* Kenarlık rengi */
+      border-radius: 5px;
+      color: #a6a1e0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .currency-symbol {
+      font-size: 1.5em;
+      margin-right: 5px;
+      color: #7e57c2; /* Sembol rengi */
+    }
+    
+    .currency-value {
+      font-size: 1.2em;
+    }
+  
+  }

@@ -1,0 +1,39 @@
+<!-- <h2>Yeni Reyon Ekle</h2>
+<div class="dialog-content">
+  <label for="aisleType">Reyon Türü:</label>
+  <select [(ngModel)]="selectedAisleType" id="aisleType">
+    <option value="" disabled selected>Reyon türü seçiniz</option>
+    <option *ngFor="let type of aisleTypes" [value]="type">{{ type }}</option>
+  </select>
+</div>
+<div class="dialog-actions">
+  <button mat-button (click)="onCancel()">İptal</button>
+  <button mat-raised-button color="primary" (click)="onAddAisle()">Ekle</button>
+</div> -->
+
+<div class="product-dialog-container">
+  <div class="dialog-header">
+    <h2>Reyon Ekleme</h2>
+    <mat-icon (click)="closeDialog()">close</mat-icon>
+  </div>
+  <form [formGroup]="aisleForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline" class="full-width" floatLabel="always">
+      <mat-label class="label">Reyon Adı</mat-label>
+      <input matInput formControlName="name" readonly="true"/>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width" floatLabel="always">
+      <mat-label class="label">Eklenecek Reyon</mat-label>
+      <mat-select formControlName="typeID">
+        <mat-option *ngFor="let type of aisleTypes | async" [value]="type.id">{{ type.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width" floatLabel="always">
+      <mat-label class="label">Eklenecek Market</mat-label>
+      <input matInput [value]="marketName" readonly="true"/>
+    </mat-form-field>
+
+    <button mat-button type="submit" class="add-button" (click)="onAddAisle()">Ekle</button>
+  </form>
+</div>

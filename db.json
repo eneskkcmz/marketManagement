@@ -1,0 +1,128 @@
+{
+  "markets": [
+    {
+      "id": "1",
+      "name": "Market A"
+    },
+    {
+      "id": "2",
+      "name": "Market B"
+    }
+  ],
+  "aisles": [
+    {
+      "name": "R1",
+      "typeID": "4",
+      "marketID": "1",
+      "id": "0d04e65f-d3d9-4f9e-8087-2ca2e907a564"
+    },
+    {
+      "id": "5f825d58-f784-4f26-900c-d884b4bbe1fc",
+      "name": "R1",
+      "typeID": "1",
+      "marketID": "2"
+    },
+    {
+      "id": "48fee47e-0fd9-47e1-a3dc-18118c7739f6",
+      "name": "R2",
+      "typeID": "5",
+      "marketID": "1"
+    },
+    {
+      "id": "77bc1ae3-c4e8-4e50-b1ca-174cc7643cbd",
+      "name": "R2",
+      "typeID": "2",
+      "marketID": "2"
+    },
+    {
+      "id": "980997a7-bde8-4e77-8dfd-d88214c348cf",
+      "name": "R3",
+      "typeID": "3",
+      "marketID": "1"
+    }
+  ],
+  "products": [
+    {
+      "name": "Ruj",
+      "aisleID": "8b193fa7-f94b-4067-b2b0-81353aefc7d4",
+      "id": "445e4779-2344-4aa2-a248-93bbda4450d4"
+    },
+    {
+      "id": "b8b6d572-278d-45d9-badb-9fbc9e6e596a",
+      "name": "Bilgisayar",
+      "aisleID": "48fee47e-0fd9-47e1-a3dc-18118c7739f6"
+    },
+    {
+      "id": "79fe5a98-e803-4f9d-86fd-8bf68986f901",
+      "name": "Mouse",
+      "aisleID": "48fee47e-0fd9-47e1-a3dc-18118c7739f6"
+    },
+    {
+      "id": "663ab97c-4bcc-41a4-b366-a20ff05e70c6",
+      "name": "Çanta",
+      "aisleID": "980997a7-bde8-4e77-8dfd-d88214c348cf"
+    },
+    {
+      "id": "907d0bdd-af12-4959-8422-344b02f01f80",
+      "name": "Kalem",
+      "aisleID": "980997a7-bde8-4e77-8dfd-d88214c348cf"
+    },
+    {
+      "id": "07f501a1-b254-45ec-88e6-624e7542b432",
+      "name": "Silgi",
+      "aisleID": "980997a7-bde8-4e77-8dfd-d88214c348cf"
+    },
+    {
+      "id": "c4a97fd9-e2b4-44af-8350-d5fd6b228f68",
+      "name": "Pirinç",
+      "aisleID": "5f825d58-f784-4f26-900c-d884b4bbe1fc"
+    },
+    {
+      "id": "7ac9ddf0-9c55-40c8-a8f3-f363233d1814",
+      "name": "Un",
+      "aisleID": "5f825d58-f784-4f26-900c-d884b4bbe1fc"
+    },
+    {
+      "id": "8e9e7397-b158-432a-9980-d874cc5b773e",
+      "name": "Sabun",
+      "aisleID": "77bc1ae3-c4e8-4e50-b1ca-174cc7643cbd"
+    },
+    {
+      "id": "a177a575-31d1-43f4-9cb5-43aa41b1c089",
+      "name": "a",
+      "aisleID": "3e6edb6b-3e9e-454d-80a5-1c0bab7070d5"
+    },
+    {
+      "id": "eb567c49-450c-4c69-a7ac-e46202a67f8f",
+      "name": "asd",
+      "aisleID": "a5d35298-731d-4f7c-87b3-d880de4b7512"
+    },
+    {
+      "id": "15877bec-9c71-4872-a3ed-d58bfed54b5a",
+      "name": "Oje",
+      "aisleID": "0d04e65f-d3d9-4f9e-8087-2ca2e907a564"
+    }
+  ],
+  "aisleTypes": [
+    {
+      "id": "1",
+      "name": "Gıda"
+    },
+    {
+      "id": "2",
+      "name": "Temizlik"
+    },
+    {
+      "id": "3",
+      "name": "Kırtasiye"
+    },
+    {
+      "id": "4",
+      "name": "Kozmetik"
+    },
+    {
+      "id": "5",
+      "name": "Elektronik"
+    }
+  ]
+}

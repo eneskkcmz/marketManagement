@@ -1,0 +1,41 @@
+<div class="product-dialog-container">
+    <div class="dialog-header">
+      <h2>Ürün Düzenle</h2>
+      
+        <mat-icon (click)="closeDialog()">close</mat-icon>
+     
+    </div>
+    <form  (ngSubmit)="onSubmit()" *ngIf="isInit">
+      <mat-form-field appearance="outline" class="full-width" floatLabel="always">
+        <mat-label class="label">Ürün ID</mat-label>
+        <input matInput [value]="currentProduct.id" readonly="true"/>
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width" floatLabel="always">
+        <mat-label class="label">Ürün Adı</mat-label>
+        <input matInput name="productName" [(ngModel)]="currentProductName"/>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width" floatLabel="always" *ngIf="currentAisle">
+        <mat-label class="label">Bulunduğu Reyon Türü</mat-label>
+        <input matInput [value]="currentAisle.name" readonly="true"/>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width" floatLabel="always">
+        <mat-label class="label">Taşınacak Marketi Seçiniz</mat-label>
+        <mat-select [(ngModel)]="selectedMarket.id" name="marketSelect" (selectionChange)="marketChange($event)">
+          <mat-option *ngFor="let market of markets | async" [value]="market.id">{{ market.name }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width" floatLabel="always">
+        <mat-label class="label">Taşınacak Reyonu Seçiniz({{selectedMarket.name}})</mat-label>
+        <mat-select [(ngModel)]="selectedAisle.id" name="aisleSelect">
+          <mat-option *ngFor="let aisle of aisles " [value]="aisle.id">{{ aisle.name }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <button mat-button class="delete-button" (click)="deleteProduct()">Sil</button>
+      <button mat-button type="submit" class="add-button">Düzenle</button>
+    </form>
+  </div>

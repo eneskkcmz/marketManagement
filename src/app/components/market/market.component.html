@@ -1,0 +1,35 @@
+<!-- <div>
+    <div class="market-header"><h2>{{marketName}}</h2></div>
+    
+  
+   
+    <button mat-raised-button color="primary" (click)="openAddAisleDialog()">Reyon Ekle</button>
+  
+
+    <div *ngFor="let aisle of aisles; let i = index" class="aisle-card">
+      <h3>{{ aisle.name }} - {{ aisle.type }}</h3>
+      <app-aisle></app-aisle>
+      <button mat-button color="warn" (click)="deleteAisle(aisle.id)">Sil</button>
+    </div>
+  </div> -->
+
+
+  <div class="container">
+    <div class="market">
+        <h2>{{market.name}}</h2>
+        <div class="table">
+            <div class="table-row table-header">
+                <div class="table-cell">Reyon</div>
+                <div class="table-cell">Tür</div>
+                <div class="table-cell">Ürünler</div>
+                <div class="table-cell"><button (click)="openAisleAddDialog()" class="add-shelf-btn">Reyon Ekle</button></div>
+            </div>
+            
+            <div  *ngFor="let aisle of aisles | async">
+              <div >
+                <app-aisle class="table-row" [aisle]="aisle" (isVisibleEvent)="isVisibleHandle($event)" ></app-aisle>
+
+              </div>
+            </div>
+    </div>
+</div>

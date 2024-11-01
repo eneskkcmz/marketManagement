@@ -1,0 +1,27 @@
+<div class="product-dialog-container">
+    <div class="dialog-header">
+      <h2>Ürün Ekleme</h2>
+      
+        <mat-icon (click)="closeDialog()">close</mat-icon>
+     
+    </div>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline" class="full-width" floatLabel="always">
+        <mat-label class="label">Ürün ID</mat-label>
+        <input matInput formControlName="id" readonly="true"/>
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width" floatLabel="always">
+        <mat-label class="label">Ürün Adı</mat-label>
+        <input matInput formControlName="name" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width" floatLabel="always">
+        <mat-label class="label">Eklenecek Reyon</mat-label>
+        <input matInput [value]="currentAisle.name" />
+      </mat-form-field>
+  
+  
+      <button mat-button type="submit" class="add-button">Ekle</button>
+    </form>
+  </div>

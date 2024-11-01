@@ -1,0 +1,32 @@
+<!-- <app-navbar></app-navbar>
+<div>
+  <h1>Market Yönetimi</h1>
+  <app-market></app-market>
+  <app-currency-rate></app-currency-rate>
+</div> -->
+
+
+<div class="supermarket-app">
+  <app-navbar></app-navbar>
+  <!-- <div class="header">
+    <div class="logo">
+      <img src="supermarket-logo.png" alt="Supermarket Logo">
+      <span>Supermarket APP</span>
+    </div>
+    <div class="currency">
+      <span class="currency-item">$ 33,7870</span>
+      <span class="currency-item">£44,6249</span>
+      <span class="currency-item">€ 37,6571</span>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Ürün Ara">
+      <button><i class="fa fa-search"></i></button>
+    </div>
+  </div> -->
+  <div class="content">
+    <div class="market-container">
+      <app-market  *ngFor="let market of markets | async" class="market-member" [market]="market"></app-market>
+    </div>
+    <button class="save-button" (click)="onSave()">Kaydet</button>
+  </div>
+</div>

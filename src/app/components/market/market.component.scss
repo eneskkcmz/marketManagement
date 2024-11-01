@@ -1,0 +1,101 @@
+.market-header{
+    text-align: center;
+    background-color:#313448;
+    
+}
+
+.container {
+    display: flex;
+    flex-flow: column-reverse;
+    padding: 20px;
+}
+
+.market {
+    background-color: #282A36;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.market h2 {
+    text-align: center;
+    color: #FFFFFF;
+    background-color:#313448;
+    padding: 10px 0;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #3A3A4F;
+
+}
+
+.table-header {
+    font-weight: bold;
+    color: #C0C0FF;
+}
+
+.table-cell {
+    flex: 1;
+    padding: 5px;
+}
+
+.product {
+    background-color: #FFA500;
+    color: #1E1E2E;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.add-shelf-btn, .add-product-btn {
+    background-color: #9E9EFF;
+    color: #1E1E2E;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-icon {
+    color: #FF6347;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.save-btn {
+    background-color: #313448;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px auto;
+    display: block;
+}
+
+.save-btn:hover {
+    background-color: #404060;
+}
+
+.add-shelf-btn:hover, .add-product-btn:hover {
+    background-color: #B0B0FF;
+}
+
+app-aisle.table-row{
+    cursor: pointer;
+}
+
+app-aisle.table-row:hover{
+    background-color: #313448;
+}

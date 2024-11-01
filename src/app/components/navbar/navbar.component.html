@@ -1,0 +1,19 @@
+<nav class="header">
+  <div class="logo">
+    <img class="logo" src="https://img.freepik.com/premium-vector/beautiful-unique-logo-design-ecommerce-retail-company_1287271-59672.jpg" alt="Supermarket Logo">
+    <!-- <img src="assets/logo.png" alt="Supermarket Logo"> -->
+    <span>Supermarket APP</span>
+  </div>
+
+  <div *ngIf="currencyRates" class="currency">
+    <div class="currency-item" *ngFor="let rate of currencyRates">
+      <span class="currency-symbol">{{ getCurrencySymbol(rate.currency) }}</span>
+      <span class="currency-value">{{ rate.value }}</span>
+    </div>
+  </div>
+  
+  <div class="search">
+      <input type="text" placeholder="Ürün Ara"  (keyup)="onSearch($event)" >
+      <!-- <button><i class="fa fa-search"></i></button> -->
+  </div>
+</nav>

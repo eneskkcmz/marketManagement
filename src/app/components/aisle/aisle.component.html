@@ -1,0 +1,13 @@
+
+
+  <div class="table-cell" >
+      {{ aisle.name }}
+      <span class="delete-icon" (click)="deleteAisle()">🗑️</span>
+    </div>
+    <div class="table-cell">{{ aisle.typeName }}</div>
+    <div class="table-cell">
+      <app-product  *ngFor="let product of filteredProducts" [product]="product"></app-product>
+    </div>
+    <div class="table-cell">
+      <button class="add-product-btn" (click)="openProductAddDialog()">Ürün Ekle</button>
+    </div>  
