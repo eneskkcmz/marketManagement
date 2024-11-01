@@ -67,5 +67,13 @@ Projeyi yerel makinenize kurmak için aşağıdaki adımları izleyin:
    Ortam değişkenlerini yapılandırma adımları 2 durumda kontrol edilmektedir.
 
    1. Projenin çalıştıtılması için repo'dan alındıktan sonra npm install ile gerekli paketlerin kurulması sağlanmalıdır.
-   2. Dummy data yerine json server kullanıldığı için mpx json-server db.json "3000" portunda çalıştırılır.
+   2. Dummy data yerine json server kullanıldığı için npx json-server db.json "3000" portunda çalıştırılır.
    3. ng serve ile "4200" portunda proje ayağa kalkar.
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
